@@ -1,0 +1,9 @@
+!/.prettierrc.js
+
+# native
+/android/
+/ios/
+/vendor/
+
+# tests
+/coverage
