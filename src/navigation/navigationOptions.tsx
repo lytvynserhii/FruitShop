@@ -3,8 +3,12 @@ import { NativeStackNavigationOptions } from '@react-navigation/native-stack';
 
 import { COLORS } from 'constants/colors';
 
-export const ROOT_STACK_OPTIONS: NativeStackNavigationOptions = {
+export const EMPTY_HEADER_STACK_OPTIONS: NativeStackNavigationOptions = {
   headerShown: false,
+};
+
+export const ROOT_STACK_OPTIONS: NativeStackNavigationOptions = {
+  ...EMPTY_HEADER_STACK_OPTIONS,
   headerStyle: {
     backgroundColor: COLORS.white,
   },

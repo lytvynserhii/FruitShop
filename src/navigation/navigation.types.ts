@@ -1,6 +1,9 @@
 import { NavigatorScreenParams } from '@react-navigation/native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
+import { CartTabStackParamList } from './CartTabStack/cartTabStack.types';
+import { HomeTabStackParamList } from './HomeTabStack/homeTabStack.types';
+
 export type RootStackParamList = {
   Login: undefined;
   Registration: undefined;
@@ -9,10 +12,10 @@ export type RootStackParamList = {
 };
 
 export type TabParamList = {
-  HomeStack: undefined;
+  HomeStack: NavigatorScreenParams<HomeTabStackParamList>;
   Notification: undefined;
   Plus: undefined;
-  CartStack: undefined;
+  CartStack: NavigatorScreenParams<CartTabStackParamList>;
   Settings: undefined;
 };
 
