@@ -20,10 +20,69 @@ const ESLINT_RULES = {
   ],
 };
 
+const IMPORT_RULES = {
+  'import/newline-after-import': ['error', { count: 1 }],
+  'import/order': [
+    'error',
+    {
+      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+      pathGroups: [
+        {
+          pattern: '{react,react-native,react-redux,@reduxjs/toolkit}',
+          group: 'external',
+          position: 'before',
+        },
+        {
+          pattern: '{screens/**}',
+          group: 'parent',
+          position: 'before',
+        },
+        {
+          pattern: '{components/**,containers/**}',
+          group: 'parent',
+          position: 'before',
+        },
+        {
+          pattern: '{assets/**,constants/**}',
+          group: 'parent',
+          position: 'before',
+        },
+        {
+          pattern: '{helpers/**,services/**,navigation/**,store/**,store}',
+          group: 'parent',
+          position: 'before',
+        },
+        {
+          pattern: '{./*.types,./*.settings,./*.styles}',
+          group: 'index',
+          position: 'before',
+        },
+      ],
+      pathGroupsExcludedImportTypes: ['react', 'react-native', 'builtin'],
+      'newlines-between': 'always',
+      alphabetize: {
+        order: 'asc',
+        caseInsensitive: false,
+      },
+    },
+  ],
+};
+
 module.exports = {
   root: true,
-  extends: '@react-native',
+  extends: ['@react-native', 'plugin:import/recommended'],
+  settings: {
+    'import/resolver': {
+      typescript: {
+        project: './tsconfig.json',
+      },
+      node: {
+        extensions: ['.js', '.ts', '.tsx'],
+      },
+    },
+  },
   rules: {
     ...ESLINT_RULES,
+    ...IMPORT_RULES,
   },
 };
