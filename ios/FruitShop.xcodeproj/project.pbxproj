@@ -12,8 +12,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		21EDC6F50AEE4B6FA2AEF6F7 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BC29E9CDDE04DBDAD75610B /* Roboto-Medium.ttf */; };
+		242A20DBC7624715AB789615 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36E52BD6117E4C66BC959F41 /* Roboto-Bold.ttf */; };
+		66647C4295704633B480F634 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17BCA564DF9B436EA3D77472 /* Roboto-Regular.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-FruitShop-FruitShopTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-FruitShop-FruitShopTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A0B10F3412F549C9912EB92A /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A4B93B20F164211815B32B9 /* Roboto-Light.ttf */; };
+		BE7CC213A18D459BADBE87F9 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B769FEEDCEF44E428CAD8EAF /* Montserrat-Medium.ttf */; };
+		E29270F466BB4F32B2674D23 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 867F5EB5BC98499C8F3E7921 /* Montserrat-Bold.ttf */; };
+		E60CF206C91A49FBB70E7B43 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 006A4547E83E4BFD99D1ACE4 /* Montserrat-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,22 +34,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		006A4547E83E4BFD99D1ACE4 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../src/assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* FruitShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* FruitShopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FruitShopTests.m; sourceTree = "<group>"; };
+		0BC29E9CDDE04DBDAD75610B /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* FruitShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FruitShop/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = FruitShop/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FruitShop/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FruitShop/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FruitShop/main.m; sourceTree = "<group>"; };
+		17BCA564DF9B436EA3D77472 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-FruitShop-FruitShopTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FruitShop-FruitShopTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E52BD6117E4C66BC959F41 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		3A4B93B20F164211815B32B9 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../src/assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-FruitShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitShop.debug.xcconfig"; path = "Target Support Files/Pods-FruitShop/Pods-FruitShop.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-FruitShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitShop.release.xcconfig"; path = "Target Support Files/Pods-FruitShop/Pods-FruitShop.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-FruitShop-FruitShopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitShop-FruitShopTests.debug.xcconfig"; path = "Target Support Files/Pods-FruitShop-FruitShopTests/Pods-FruitShop-FruitShopTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-FruitShop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FruitShop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FruitShop/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		867F5EB5BC98499C8F3E7921 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../src/assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-FruitShop-FruitShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitShop-FruitShopTests.release.xcconfig"; path = "Target Support Files/Pods-FruitShop-FruitShopTests/Pods-FruitShop-FruitShopTests.release.xcconfig"; sourceTree = "<group>"; };
+		B769FEEDCEF44E428CAD8EAF /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../src/assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -106,6 +120,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6D33A97777F346DFB473376B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				867F5EB5BC98499C8F3E7921 /* Montserrat-Bold.ttf */,
+				B769FEEDCEF44E428CAD8EAF /* Montserrat-Medium.ttf */,
+				006A4547E83E4BFD99D1ACE4 /* Montserrat-SemiBold.ttf */,
+				36E52BD6117E4C66BC959F41 /* Roboto-Bold.ttf */,
+				3A4B93B20F164211815B32B9 /* Roboto-Light.ttf */,
+				0BC29E9CDDE04DBDAD75610B /* Roboto-Medium.ttf */,
+				17BCA564DF9B436EA3D77472 /* Roboto-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +151,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				6D33A97777F346DFB473376B /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -243,6 +273,13 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				E29270F466BB4F32B2674D23 /* Montserrat-Bold.ttf in Resources */,
+				BE7CC213A18D459BADBE87F9 /* Montserrat-Medium.ttf in Resources */,
+				E60CF206C91A49FBB70E7B43 /* Montserrat-SemiBold.ttf in Resources */,
+				242A20DBC7624715AB789615 /* Roboto-Bold.ttf in Resources */,
+				A0B10F3412F549C9912EB92A /* Roboto-Light.ttf in Resources */,
+				21EDC6F50AEE4B6FA2AEF6F7 /* Roboto-Medium.ttf in Resources */,
+				66647C4295704633B480F634 /* Roboto-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
