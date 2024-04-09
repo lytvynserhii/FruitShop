@@ -1,5 +1,7 @@
 import { StyleSheet } from 'react-native';
 
+import { verticalScale } from 'constants/scale';
+
 export const styles = StyleSheet.create({
   safeAreaView: {
     flex: 1,
@@ -10,8 +12,8 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    marginTop: 20,
-    fontSize: 20,
+    marginTop: verticalScale(20),
+    fontSize: verticalScale(20),
     textAlign: 'center',
   },
 });
