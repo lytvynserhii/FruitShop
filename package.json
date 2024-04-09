@@ -18,7 +18,8 @@
     "pods:reinstall": "yarn run pods:uninstall && yarn run pods:install",
     "gems:install": "bundle install --path vendor/bundle",
     "gems:uninstall": "rm -rf vendor/",
-    "gems:reinstall": "yarn run gems:uninstall && yarn run gems:install"
+    "gems:reinstall": "yarn run gems:uninstall && yarn run gems:install",
+    "prepare": "husky"
   },
   "dependencies": {
     "react": "18.2.0",
@@ -28,6 +29,8 @@
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
     "@react-native/babel-preset": "0.73.21",
     "@react-native/eslint-config": "0.73.2",
     "@react-native/metro-config": "0.73.5",
@@ -39,10 +42,18 @@
     "eslint": "^8.19.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
+    "husky": "^9.0.11",
     "jest": "^29.6.3",
+    "lint-staged": "^15.2.2",
     "prettier": "2.8.8",
     "react-test-renderer": "18.2.0",
     "typescript": "5.0.4"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "prettier --write",
+      "yarn lint --cache"
+    ]
   },
   "engines": {
     "node": ">=18"
