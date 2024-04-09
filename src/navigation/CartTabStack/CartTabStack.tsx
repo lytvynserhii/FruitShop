@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { EmptyScreen } from 'screens/EmptyScreen/EmptyScreen';
+import { CheckoutScreen } from 'screens/CheckoutScreen/CheckoutScreen';
+import { ProductDetailsScreen } from 'screens/ProductDetailsScreen/ProductDetailsScreen';
 
 import {
   CART_TAB_STACK_OPTIONS,
@@ -18,12 +19,12 @@ export const CartTabStack = () => (
     screenOptions={CART_TAB_STACK_OPTIONS}>
     <Stack.Screen
       name="ProductDetails"
-      component={EmptyScreen}
+      component={ProductDetailsScreen}
       options={PRODUCT_DETAILS_SCREEN_OPTIONS}
     />
     <Stack.Screen
       name="Checkout"
-      component={EmptyScreen}
+      component={CheckoutScreen}
       options={CHECKOUT_SCREEN_OPTIONS}
     />
   </Stack.Navigator>

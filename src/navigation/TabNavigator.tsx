@@ -9,6 +9,7 @@ import { HomeTabIcon } from 'components/svg/tabs/HomeTabIcon';
 import { NotificationTabIcon } from 'components/svg/tabs/NotificationTabIcon';
 import { SettingsTabIcon } from 'components/svg/tabs/SettingsTabIcon';
 
+import { CartTabStack } from './CartTabStack/CartTabStack';
 import { PlusTabButton } from './PlusTabButton/PlusTabButton';
 import { ROOT_TAB_OPTIONS } from './navigationOptions';
 
@@ -42,7 +43,7 @@ export const TabNavigator: FC = () => (
     />
     <Tab.Screen
       name="CartStack"
-      component={EmptyScreen}
+      component={CartTabStack}
       options={{
         tabBarIcon: CartTabIcon,
       }}
