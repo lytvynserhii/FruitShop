@@ -1,0 +1,2 @@
+export const NUMBER_PICKER_MIN_VALUE = 1;
+export const NUMBER_PICKER_MAX_VALUE = 10;
