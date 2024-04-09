@@ -13,7 +13,7 @@ import { Slide } from './Slide/Slide';
 import { ONBOARDING_DATA } from './onboardingScreen.settings';
 import { styles } from './onboardingScreen.styles';
 
-export const OnboardingScreen: FC<OnboardingScreenProps> = () => {
+export const OnboardingScreen: FC<OnboardingScreenProps> = ({ navigation }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const sliderRef = useRef<ScrollView>(null);
@@ -22,7 +22,10 @@ export const OnboardingScreen: FC<OnboardingScreenProps> = () => {
     if (activeIndex < ONBOARDING_DATA.length - 1) {
       setActiveIndex(activeIndex + 1);
     } else {
-      return;
+      navigation.replace('Tabs', {
+        screen: 'HomeStack',
+        params: { screen: 'Home' },
+      });
     }
   };
 

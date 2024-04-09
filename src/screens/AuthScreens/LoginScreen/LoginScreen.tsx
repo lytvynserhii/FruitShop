@@ -38,7 +38,12 @@ export const LoginScreen: FC<LoginScreenProps> = ({ navigation }) => {
     navigation.replace('Registration');
   };
 
-  const handleAuth = () => {};
+  const handleAuth = () => {
+    navigation.replace('Tabs', {
+      screen: 'HomeStack',
+      params: { screen: 'Home' },
+    });
+  };
 
   const handleLoginButtonPress = () => {
     handleSubmit(handleAuth)();
