@@ -4,10 +4,21 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --simulator='iPhone 15'",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "deps:install": "yarn && yarn run pods:install",
+    "deps:uninstall": "yarn run packages:uninstall && yarn run pods:uninstall",
+    "deps:reinstall": "yarn run deps:uninstall && yarn run deps:install",
+    "packages:uninstall": "rm -rf node_modules/",
+    "packages:reinstall": "yarn run packages:uninstall && yarn",
+    "pods:install": "bundle exec pod install --project-directory=ios",
+    "pods:uninstall": "rm -rf ios/Pods/",
+    "pods:reinstall": "yarn run pods:uninstall && yarn run pods:install",
+    "gems:install": "bundle install --path vendor/bundle",
+    "gems:uninstall": "rm -rf vendor/",
+    "gems:reinstall": "yarn run gems:uninstall && yarn run gems:install"
   },
   "dependencies": {
     "react": "18.2.0",
