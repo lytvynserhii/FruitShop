@@ -10,3 +10,5 @@ export const horizontalScale = (size: number) =>
   (DEVICE_WIDTH / MOCKUP_WIDTH) * size;
 export const verticalScale = (size: number) =>
   (DEVICE_HEIGHT / MOCKUP_HEIGHT) * size;
+
+export const TAB_ICON_SIZE = verticalScale(34);
