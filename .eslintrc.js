@@ -91,7 +91,7 @@ module.exports = {
     'plugin:jest-formatting/recommended',
     'plugin:jest-extended/all',
   ],
-  plugins: ['jest-formatting', 'jest-extended'],
+  plugins: ['jest-formatting', 'jest-extended', 'testing-library'],
   settings: {
     'import/resolver': {
       typescript: {
@@ -102,6 +102,18 @@ module.exports = {
       },
     },
   },
+  overrides: [
+    {
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:testing-library/react'],
+      rules: {
+        'testing-library/await-async-queries': 'error',
+        'testing-library/no-await-sync-queries': 'error',
+        'testing-library/no-debugging-utils': 'warn',
+        'testing-library/prefer-screen-queries': 'off',
+      },
+    },
+  ],
   rules: {
     ...ESLINT_RULES,
     ...IMPORT_RULES,
