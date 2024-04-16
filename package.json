@@ -19,6 +19,7 @@
     "gems:install": "bundle install --path vendor/bundle",
     "gems:uninstall": "rm -rf vendor/",
     "gems:reinstall": "yarn run gems:uninstall && yarn run gems:install",
+    "ci": "yarn install --frozen-lockfile",
     "prepare": "husky"
   },
   "dependencies": {
