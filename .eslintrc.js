@@ -18,6 +18,19 @@ const ESLINT_RULES = {
     'error',
     { props: 'never', children: 'never' },
   ],
+  'no-restricted-properties': [
+    'error',
+    {
+      object: 'jest',
+      property: 'resetAllMocks',
+      message: '`clearMocks` is already used in jest.config.js',
+    },
+    {
+      object: 'jest',
+      property: 'clearAllMocks',
+      message: '`clearMocks` is already used in jest.config.js',
+    },
+  ],
 };
 
 const IMPORT_RULES = {
@@ -70,7 +83,15 @@ const IMPORT_RULES = {
 
 module.exports = {
   root: true,
-  extends: ['@react-native', 'plugin:import/recommended'],
+  extends: [
+    '@react-native',
+    'plugin:import/recommended',
+    'plugin:jest/recommended',
+    'plugin:jest/style',
+    'plugin:jest-formatting/recommended',
+    'plugin:jest-extended/all',
+  ],
+  plugins: ['jest-formatting', 'jest-extended', 'testing-library'],
   settings: {
     'import/resolver': {
       typescript: {
@@ -81,6 +102,18 @@ module.exports = {
       },
     },
   },
+  overrides: [
+    {
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:testing-library/react'],
+      rules: {
+        'testing-library/await-async-queries': 'error',
+        'testing-library/no-await-sync-queries': 'error',
+        'testing-library/no-debugging-utils': 'warn',
+        'testing-library/prefer-screen-queries': 'off',
+      },
+    },
+  ],
   rules: {
     ...ESLINT_RULES,
     ...IMPORT_RULES,

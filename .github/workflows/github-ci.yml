@@ -1,0 +1,25 @@
+name: Pull request
+on: pull_request
+concurrency:
+  group: ${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  lint: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Install packages
+        run: yarn ci
+      - name: Run linter
+        run: yarn lint && tsc
+  test: 
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Install packages
+        run: yarn ci
+      - name: Run tests
+        run: yarn test 
